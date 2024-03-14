@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
 void  playsound(int soundNumber)
 {
   final player = AudioPlayer();
-  player.play(AssetSource('audio/note$soundNumber.wav'));
+  player.play(AssetSource('audio/note$soundNumber.mp3'));
 }
   Expanded buildkey({Color color = Colors.white, int soundnumber = 0})
   {
@@ -41,8 +41,6 @@ void  playsound(int soundNumber)
                 buildkey(color:Colors.yellow,soundnumber:3),
                 buildkey(color:Colors.green,soundnumber:4),
                 buildkey(color:Colors.teal,soundnumber:5),
-                buildkey(color:Colors.blue,soundnumber:6),
-                buildkey(color:Colors.purple,soundnumber:7),
 
 
         ],
